@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Dropdown Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#dropdown').change(function() {
+                var selectedValue = $(this).val();
+                $('#result').text('You selected: ' + selectedValue);
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>jQuery Dropdown Example</h1>
+    <select id="dropdown">
+        <option value="Option 1">Option 1</option>
+        <option value="Option 2">Option 2</option>
+        <option value="Option 3">Option 3</option>
+    </select>
+    <p id="result"></p>
+</body>
+</html>
